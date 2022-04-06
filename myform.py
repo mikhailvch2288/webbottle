@@ -1,7 +1,7 @@
 from bottle import post, request
 import re
 import pdb
-
+import json
 questions={}
 sh = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})')
 
@@ -15,6 +15,8 @@ def my_form():
              return "Invalid mail address"    
 
     questions[mail]=quest
-    pdb.set_trace()
+    #pdb.set_trace()
+    with open ('question.txt','w') as txtquest:
+        json.dump(questions,txtquest)
     return "Thanks! The answer will be sent to the mail %s" % mail
     
