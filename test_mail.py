@@ -16,6 +16,8 @@ class Test_testmail(unittest.TestCase):
                   ("Question?", "qstn@aus.com")
                   ]                        
         for(quest,mail) in choice:
-           self.assertIsNone(checkmail(quest, mail))                   
+           self.assertIsNone(checkmail(quest, mail))         
+           
+
 if __name__ == '__main__':
     unittest.main()
