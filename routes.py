@@ -43,3 +43,14 @@ def contact():
         message='Спортивные новости',
         year=datetime.now().year
     )
+
+
+@route('/partner')
+@view('partner')
+def contact():
+    """Renders the contact page."""
+    return dict(
+        title='Партнёры',
+        message='Партнёры СМИ',
+        year=datetime.now().year
+    )

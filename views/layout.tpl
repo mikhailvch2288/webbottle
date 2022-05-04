@@ -26,6 +26,7 @@
                     <li><a href="/culture">Культура</a></li>
                     <li><a href="/sport">Спорт</a></li>
                     <li><a href="/life">Жизнь</a></li>
+                    <li><a href="/partner">Партнёры</a></li>
                 </ul>
             </div>
         </div>

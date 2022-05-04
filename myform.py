@@ -5,10 +5,10 @@ import json
 questions={}
 shame = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})')
 
-@post('/home', method='post')
+@post('/partner', method='post')
 def my_form():
-    quest = request.forms.get('QUEST')
-    mail = request.forms.get('ADRESS')
+    quest = request.forms.get('REQUEST')
+    mail = request.forms.get('EMAIL')
     if quest == '' or mail == '':
         return "Some fields are empty. Fill they all"
     if shame.match(mail) is None:
