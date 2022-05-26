@@ -5,7 +5,7 @@ class Test_test_partner(unittest.TestCase):
         list_description_t = ["our company", "company", "ford motor company", "restaurant chain",
                         "business partner", "our company has been in existence since 1996"]
         for y in list_description_t:
-            self.assertTrue(myform.isCorrectdescriptionT(y))
+            self.assertTrue(myform.IsCorrectdescriptionT(y))
 
 
     def test_false_description(self):
@@ -14,11 +14,11 @@ class Test_test_partner(unittest.TestCase):
                        "", "      ", "v", "y-10-20", 
                        "f)", "grrrtr"]
         for y in list_description_f:
-            self.assertFalse(myform.isCorrectdescriptionF(y))
+            self.assertFalse(myform.IsCorrectdescriptionF(y))
 
 
     def test_mail_T(self):
-        list_email_t = ["aaa@mail.ru", "johnwilliams@gmail.com", "moscow23@yahoo.com", "fjdig_cjjd@gmail.com", " rytev-ert@list.ru"]
+        list_email_t = ["aaa@mail.ru", "johnwilliams@gmail.com", "moscow23@yahoo.com"]
         for y in list_email_t:
             self.assertTrue(myform.isCorrectmailTrue(y))
 

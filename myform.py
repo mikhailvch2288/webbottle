@@ -4,20 +4,34 @@ import json
 
 company={}
 shame = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})')
-shame2 = re.compile(r'(\A[A-Z]+[a-z])')
+shame2 = re.compile(r'(\A[A-Za-zа-яА-Я])')
+
 
 @post('/partner', method='post')
 def my_form():
 
-    if(fill_up('REQUEST','EMAIL')is False):
-        return "Заполните все поля!!!"
+    
 
-    description= request.params.REQUEST
-    email = request.params.EMAIL
+    description= request.forms.get('TEXT')
+    email = request.forms.get('EMAIL')
 
-    company[email]=description
-    with open('partner.txt','w') as pq:
-        json.dump(company,pq)
+
+    if description == '' or email == '': 
+             return "Заполните все поля!!!"
+
+    if shame.match(email) is None:
+             return "Invalid email"
+
+
+
+    quest= str(email) + " - "+ str(description)
+
+    #company[email]=description
+
+
+    new_str = quest
+    with open('partner.txt','a') as pq:
+        pq.write("\n"+new_str)
     return "Thanks! The application will be sent to the email %s" % email
     
 def fill_up(*words):
@@ -42,24 +56,21 @@ def checkmail(quest,mail):
     
 
 
-#проверка описания
-def isCorrectdescriptionT(description: str):
-    pattern = re.compile(r'(\A[A-Z]+[a-z])')
-    if pattern.match(description):
+def IsCorrectdescriptionF(description: str):
+    if shame2.match(description) is None:
+        return False
+
+def IsCorrectdescriptionT(description: str):
+    if shame2.match(description):
         return True
 
-#проверка описания
-def isCorrectdescriptionF(description: str):
-    pattern = re.compile(r'(\A[A-Z]+[a-z])')
-    if pattern.match(description) is None:
-        return False
 #проверка почты
 def isCorrectmailTrue(email: str):
-    pattern = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})')
-    if pattern.match(email):
+    #pattern = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})')
+    if shame.match(email):
         return True
 #проверка почты
 def isCorrectmailFalse(email: str):
-    pattern = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})')
-    if pattern.match(email) is None:
+    #pattern = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})')
+    if shame.match(email) is False:
         return False
