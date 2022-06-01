@@ -1,50 +1,55 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - My Bottle Application</title>
-    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
-    <script src="/static/scripts/modernizr-2.6.2.js"></script>
-</head>
-
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand">NEWS Today</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/home">Главная</a></li>
-                    <li><a href="/culture">Культура</a></li>
-                    <li><a href="/sport">Спорт</a></li>
-                    <li><a href="/life">Жизнь</a></li>
-                    <li><a href="/partner">Партнёры</a></li>
-                    <li><a href="/orders">Заказы</a></li>
-                     <li><a href="/revi">Отзывы</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="container body-content">
-        {{!base}}
-        <hr />
-        <footer>
-            <p>&copy; {{ year }} - My Bottle Application</p>
-        </footer>
-    </div>
-
-    <script src="/static/scripts/jquery-1.10.2.js"></script>
-    <script src="/static/scripts/bootstrap.js"></script>
-    <script src="/static/scripts/respond.js"></script>
-
-</body>
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>{{ title }} - My Bottle Application</title> 
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" /> 
+    <script src="/static/scripts/modernizr-2.6.2.js"></script> 
+</head> 
+ 
+<body> 
+     
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+  <div class="container-fluid"> 
+    <a href="/" class="navbar-brand">NEWS Today</a> 
+     
+    <div class="collapse navbar-collapse" id="navbarColor01"> 
+        <ul class="navbar-nav me-auto"> 
+            <li class="nav-item"><a class="nav-link active" href="/culture">Музыка</a></li> 
+            <li class="nav-item"><a class="nav-link active" href="/sport">Спорт</a></li> 
+            <li class="nav-item"><a class="nav-link active" href="/life">Жизнь</a></li> 
+            <li class="nav-item dropdown"> 
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Прочее</a> 
+                <div class="dropdown-menu"> 
+                  <a class="dropdown-item" href="makeorder">Отзывы</a> 
+                  <a class="dropdown-item" href="partner">Наши партнеры</a> 
+                  <a class="dropdown-item" href="orders">Заказы</a> 
+                </div> 
+            </li> 
+        </ul> 
+    </div> 
+  </div> 
+</nav> 
+ 
+ 
+ 
+    <div class="container body-content"> 
+        {{!base}} 
+        <hr /> 
+        <footer> 
+            <p>&copy; {{ year }} - My Bottle Application</p> 
+        </footer> 
+    </div> 
+ 
+    <script src="/static/scripts/jquery-1.10.2.js"></script> 
+    <script src="/static/scripts/bootstrap.js"></script> 
+    <script src="/static/scripts/respond.js"></script> 
+ 
+</body> 
 </html>

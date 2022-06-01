@@ -36,5 +36,6 @@
     <form action="/partner" method="post">
         <p><textarea rows="5" columns="20" cols="100" name="TEXT" placeholder="Описание о компании"></textarea></p> 
         <p><input type="text" size="100" name="EMAIL" placeholder="Ваша почта" ></p>
-        <p><input type="submit" class="btn btn-default" value="Добавить на страницу"></p>
+      
+        <p> <input type="submit" class="bot1" value="Добавить на страницу"></p>
     </form>

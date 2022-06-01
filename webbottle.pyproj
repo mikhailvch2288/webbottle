@@ -32,7 +32,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="class1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="nekit.py">
@@ -41,7 +47,9 @@
     <Compile Include="part.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="routes.py" />
+    <Compile Include="..\..\..\..\OneDrive\Рабочий стол\routes.py">
+      <Link>routes.py</Link>
+    </Compile>
     <Compile Include="myform.py">
       <SubType>Code</SubType>
     </Compile>
@@ -49,6 +57,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test_partner.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Review.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -61,8 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
-    <Content Include="static\content\bootstrap.css" />
-    <Content Include="static\content\bootstrap.min.css" />
     <Content Include="static\content\site.css" />
     <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />

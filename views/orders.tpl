@@ -9,7 +9,7 @@
         <p><input type="text" size="100" name="ADDRESS" placeholder="Ваш адрес" ></p>
         <p><input type="text" size="100" name="MAIL" placeholder="Ваша почта" ></p>
         <p><input type="text" size="100" name="PAYMENT" placeholder="Ваш номер карты" ></p>
-        <p><input type="submit" class="btn btn-default" value="Добавить заказ"></p>
+        <p><input type="submit" class="bot1" value="Добавить заказ"></p>
     </form>
 
 <address>
