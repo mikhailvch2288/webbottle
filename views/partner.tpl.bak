@@ -6,36 +6,22 @@
 <address>
 	
 	
-	<img src="static\images\челси.jpg">
+	<img src="static\images\taxi.jpg">
     <p> </p>
-	<p class="lead">Челси обыграл Ньюкасл</p>
+	<p class="lead">Агрегатор такси "Таксовичкоф"</p>
     <p>
-            Чемпионат Англии. «Челси» победил «Ньюкасл», «Арсенал» обыграл «Лестер».
-			
-			
-			В субботних матчах 29-го тура АПЛ «Ливерпуль» на выезде выиграл у «Брайтона» (2:0), «Манчестер Юнайтед» дома был сильнее «Тоттенхэма» (3:2).
-В воскресенье «Челси» обыграл «Ньюкасл» (1:0), «Арсенал» победил «Лестер» (2:0).
-Тур закроется в понедельник матчем «Кристал Пэлас» – «Манчестер Сити».
+            
         </p>
 </address>
 
 <address>
 	
 	
-	<img src="static\images\спартак.jpg">
+	<img src="static\images\business.jpg">
 	<p> </p>
-	<p class="lead">Краснодар обыграл Спартак</p>
+	<p class="lead">Первое деловое радио "Business FM"</p>
     <p>
-            «Краснодар» дважды обыграл «Спартак» в этом сезоне – по 2:1
-			
-			
-			«Краснодар» выиграл оба матча у «Спартака» в этом сезоне.
-			
-			Сегодня «быки» в Москве обыграли красно-белых со счетом 2:1 в рамках 21-го тура РПЛ, а 20 ноября 2021 года – дома с тем же счетом в 15-м туре.
-«Краснодар» занимает 5-е место в таблице Премьер-лиги, «Спартак» – 9-е.
-
-
-			
+            
         </p>
 </address>
 
@@ -47,8 +33,8 @@
 </address>
 
  <h3> Хотите стать нашим партнёром? </h3>
-    <form action="/home" method="post">
-        <p><textarea rows="5" columns="20" cols="100" name="REQUEST" placeholder="Описание о компании"></textarea></p> 
-        <p><input type="text" size="100" name="EMAIL" placeholder="Ваша почта"></p>
+    <form action="/partner" method="post">
+        <p><textarea rows="5" columns="20" cols="100" name="TEXT" placeholder="Описание о компании"></textarea></p> 
+        <p><input type="text" size="100" name="EMAIL" placeholder="Ваша почта" ></p>
         <p><input type="submit" class="btn btn-default" value="Добавить на страницу"></p>
     </form>

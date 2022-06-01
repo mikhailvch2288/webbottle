@@ -54,3 +54,15 @@ def contact():
         message='Партнёры СМИ',
         year=datetime.now().year
     )
+
+
+
+@route('/revi')
+@view('revi')
+def contact():
+    """Renders the contact page."""
+    return dict(
+        title='Отзывы',
+        message='Оставьте ваш отзыв',
+        year=datetime.now().year
+    )

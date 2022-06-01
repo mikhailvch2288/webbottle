@@ -6,6 +6,7 @@ import bottle
 import os
 import sys
 import myform 
+import json
 
 # routes contains the HTTP handlers for our server and must be imported.
 import routes
@@ -37,4 +38,8 @@ if __name__ == '__main__':
         return bottle.static_file(filepath, root=STATIC_ROOT)
 
     # Starts a local test server.
-    bottle.run(server='wsgiref', host=HOST, port=PORT)
+    try :
+        bottle.run(server='wsgiref', host=HOST, port=PORT)
+    except:
+        with open ('company.txt','w') as textcom:
+            json.dump(company,textcom)

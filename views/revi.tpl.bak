@@ -33,8 +33,10 @@
 </address>
 
  <h3> Хотите стать нашим партнёром? </h3>
-    <form action="/partner" method="post">
-        <p><textarea rows="5" columns="20" cols="100" name="TEXT" placeholder="Описание о компании"></textarea></p> 
-        <p><input type="text" size="100" name="EMAIL" placeholder="Ваша почта" ></p>
-        <p><input type="submit" class="btn btn-default" value="Добавить на страницу"></p>
+    <form action="/revi" method="post">
+	    <p><input type="submit" value="Confirm your order!" class="btn btn-default" size="100"></p> 
+        <p><input type="text" cols="51" name="NICKNAME" placeholder="Nickname"></p>  
+        <p><input type="text" size="50" name="MAIL" placeholder="Mail"></p> 
+        <p><input type="text" size="50" name="OTZYV" placeholder="otzyv"></p> 
+       
     </form>

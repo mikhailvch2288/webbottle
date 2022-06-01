@@ -27,6 +27,7 @@
                     <li><a href="/sport">Спорт</a></li>
                     <li><a href="/life">Жизнь</a></li>
                     <li><a href="/partner">Партнёры</a></li>
+                     <li><a href="/revi">Отзывы</a></li>
                 </ul>
             </div>
         </div>

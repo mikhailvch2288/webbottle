@@ -16,7 +16,7 @@ def my_form():
     email = request.forms.get('EMAIL')
 
 
-    if description == '' or email == '': 
+    if (description == '' or description is None) or (email == '' or email is None): 
              return "Заполните все поля!!!"
 
     if shame.match(email) is None:
