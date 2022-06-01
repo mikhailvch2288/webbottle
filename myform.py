@@ -7,6 +7,9 @@ shame = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{
 shame2 = re.compile(r'(\A[A-Za-zа-яА-Я])')
 
 
+
+
+
 @post('/partner', method='post')
 def my_form():
 

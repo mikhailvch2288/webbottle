@@ -35,6 +35,9 @@
     <Compile Include="module1.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="nekit.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="part.py">
       <SubType>Code</SubType>
     </Compile>
